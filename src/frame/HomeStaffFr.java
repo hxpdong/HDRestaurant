@@ -24,6 +24,7 @@ import model.Dish;
 import model.Invoice;
 import hdrestaurant.ClockThread;
 import hdrestaurant.SharedData;
+import java.util.Locale;
 /**
  *
  * @author ASUS OS
@@ -297,7 +298,7 @@ public class HomeStaffFr extends javax.swing.JFrame {
                     
                 }catch (Exception e){e.printStackTrace();}
                 }
-            SimpleDateFormat sdf = new SimpleDateFormat("EEEE");
+            SimpleDateFormat sdf = new SimpleDateFormat("EEEE", Locale.ENGLISH);
             Date now = new Date();
             String st = sdf.format(now);
             
@@ -500,7 +501,7 @@ public class HomeStaffFr extends javax.swing.JFrame {
                     
                 }catch (Exception e){e.printStackTrace();}
                 }
-            SimpleDateFormat sdf = new SimpleDateFormat("EEEE");
+            SimpleDateFormat sdf = new SimpleDateFormat("EEEE",Locale.ENGLISH);
             Date now = new Date();
             String st = sdf.format(now);
             

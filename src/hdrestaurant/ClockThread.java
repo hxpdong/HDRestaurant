@@ -6,6 +6,7 @@ package hdrestaurant;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import javax.swing.JLabel;
 
 /**
@@ -20,7 +21,7 @@ public class ClockThread extends Thread{
     }
     
     public void run(){
-        SimpleDateFormat sdf = new SimpleDateFormat("EEEE dd-MM-yyyy hh:mm:ss aa");
+        SimpleDateFormat sdf = new SimpleDateFormat("EEEE dd-MM-yyyy hh:mm:ss aa", Locale.ENGLISH);
         while(!exit){
             Date now = new Date();
             String st = sdf.format(now);
