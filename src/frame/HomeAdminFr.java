@@ -1095,6 +1095,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabelTtIncome = new javax.swing.JLabel();
         jLabelTtInvoice = new javax.swing.JLabel();
+        TabInventory = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Admin Homepage");
@@ -2067,6 +2068,21 @@ public class HomeAdminFr extends javax.swing.JFrame {
 
         TabbedPaneAdmin.addTab("Statistic", TabStatistic);
 
+        TabInventory.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout TabInventoryLayout = new javax.swing.GroupLayout(TabInventory);
+        TabInventory.setLayout(TabInventoryLayout);
+        TabInventoryLayout.setHorizontalGroup(
+            TabInventoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 975, Short.MAX_VALUE)
+        );
+        TabInventoryLayout.setVerticalGroup(
+            TabInventoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 472, Short.MAX_VALUE)
+        );
+
+        TabbedPaneAdmin.addTab("Inventory", TabInventory);
+
         javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
         background.setLayout(backgroundLayout);
         backgroundLayout.setHorizontalGroup(
@@ -2826,6 +2842,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
     private javax.swing.JLabel StaffPosition;
     private javax.swing.JLabel StaffState;
     private javax.swing.JPanel StatisticIncome;
+    private javax.swing.JPanel TabInventory;
     private javax.swing.JPanel TabInvoice;
     private javax.swing.JPanel TabMenu;
     private javax.swing.JPanel TabStaff;
