@@ -1,0 +1,315 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
+package frame;
+
+import SQLConnect.SQLConnection;
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import javax.swing.JOptionPane;
+import model.Account;
+import hdrestaurant.SharedData;
+//import modelmethod.Accountmethod;
+
+/**
+ *
+ * @author ASUS OS
+ */
+public class ChangePasswordFr extends javax.swing.JFrame {
+
+    /**
+     * Creates new form ChangePasswordFr
+     */
+    public ChangePasswordFr() {
+        initComponents();
+        pack();
+        setLocationRelativeTo(null);
+        setVisible(true);
+    }
+    
+    private void ChangePW(){
+        try{
+            CallableStatement cStmt = null;
+            Connection conn = SQLConnection.getConnection();
+            int accountID = SharedData.Account_log.getAccount_id();
+            String username = SharedData.Account_log.getUsername();
+            String oldpassword = SharedData.Account_log.getPassword();
+            
+            String oldPass = jPasswordFieldOldPass.getText();
+            String newPass = jPasswordFieldNewPass.getText();
+            String Confirm = jPasswordFieldConfirm.getText();
+            
+            
+            /*while(true){
+                if(!oldPass.equals("")){
+                    if(oldPass.equals(oldpassword)){
+                        if(!newPass.equals("")){
+                            if(!Confirm.equals("")){
+                                if(Confirm.equals(newPass)){
+                                    cStmt = conn.prepareCall("call account_changePassword(?,?,?);");
+                                    cStmt.setInt(1,accountID);
+                                    cStmt.setString(2,oldPass);
+                                    cStmt.setString(3, newPass);
+                                    ResultSet rs = cStmt.executeQuery();
+                                    JOptionPane.showMessageDialog(this, "Update password successful");
+                                    dispose();
+                                    return;
+                                 
+                                }else{
+                                    JOptionPane.showMessageDialog(this, "Confirm does not match new password");
+                                    return;
+                                }
+                            }else{
+                                JOptionPane.showMessageDialog(this, "Please confirm new password");
+                                return;
+                            }
+                        }else{
+                            JOptionPane.showMessageDialog(this, "New password is blank");
+                            return;
+                        }
+                    }else{
+                        JOptionPane.showMessageDialog(this, "Old password does not match");
+                        return;
+                    }
+                }else{
+                    JOptionPane.showMessageDialog(this, "Old password is blank");
+                    return;
+                }
+            }
+            */
+            
+            while(true){
+                if(oldPass.equals("")){
+                    JOptionPane.showMessageDialog(this, "Old Password is blank");
+                    return;
+                } else if(!oldPass.equals(oldpassword)){
+                    JOptionPane.showMessageDialog(this, "Old Password does not match");
+                    return;
+                }
+                break;
+            }
+            
+            while(true){
+                if(newPass.equals("")){
+                    JOptionPane.showMessageDialog(this, "New Password is blank");
+                    return;
+                } else
+                break;
+            }
+            
+            while(true){
+                if(Confirm.equals("")){
+                    JOptionPane.showMessageDialog(this, "Please confirm new password");
+                    return;
+                }else if(!Confirm.equals(newPass)){
+                    JOptionPane.showMessageDialog(this, "Confirm does not match with new password");
+                    return;
+                }else{
+                    cStmt = conn.prepareCall("call account_changePassword(?,?,?);");
+                    cStmt.setInt(1,accountID);
+                    cStmt.setString(2,oldPass);
+                    cStmt.setString(3, newPass);
+                    ResultSet rs = cStmt.executeQuery();
+                    JOptionPane.showMessageDialog(this, "Update password successful");
+                    dispose();
+                    return;
+                }
+                
+            }
+        }catch (Exception e){}
+    }
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        background = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        ChangePassword = new javax.swing.JLabel();
+        OldPass = new javax.swing.JLabel();
+        NewPass = new javax.swing.JLabel();
+        Confirm = new javax.swing.JLabel();
+        jButtonOK = new javax.swing.JButton();
+        jButtonCancel = new javax.swing.JButton();
+        jPasswordFieldNewPass = new javax.swing.JPasswordField();
+        jPasswordFieldOldPass = new javax.swing.JPasswordField();
+        jPasswordFieldConfirm = new javax.swing.JPasswordField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Change password");
+        setUndecorated(true);
+        setResizable(false);
+
+        background.setBackground(new java.awt.Color(255, 255, 255));
+        background.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        background.setLayout(null);
+
+        ChangePassword.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        ChangePassword.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ChangePassword.setText("Change Password");
+
+        OldPass.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        OldPass.setText("Old password:");
+
+        NewPass.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        NewPass.setText("New password:");
+
+        Confirm.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        Confirm.setText("Confirm:");
+
+        jButtonOK.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButtonOK.setText("OK");
+        jButtonOK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonOKActionPerformed(evt);
+            }
+        });
+
+        jButtonCancel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButtonCancel.setText("Cancel");
+        jButtonCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCancelActionPerformed(evt);
+            }
+        });
+
+        jPasswordFieldNewPass.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jPasswordFieldOldPass.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jPasswordFieldConfirm.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ChangePassword, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Confirm, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(OldPass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(NewPass, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPasswordFieldNewPass)
+                            .addComponent(jPasswordFieldOldPass)
+                            .addComponent(jPasswordFieldConfirm, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(71, Short.MAX_VALUE)
+                .addComponent(jButtonOK, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(67, 67, 67)
+                .addComponent(jButtonCancel)
+                .addGap(77, 77, 77))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(ChangePassword, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(OldPass, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPasswordFieldOldPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(NewPass, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPasswordFieldNewPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Confirm, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPasswordFieldConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonOK)
+                    .addComponent(jButtonCancel))
+                .addContainerGap())
+        );
+
+        background.add(jPanel1);
+        jPanel1.setBounds(9, 17, 350, 200);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(background, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(background, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jButtonCancelActionPerformed
+
+    private void jButtonOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOKActionPerformed
+        // TODO add your handling code here:
+        ChangePW();
+        
+    }//GEN-LAST:event_jButtonOKActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(ChangePasswordFr.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(ChangePasswordFr.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(ChangePasswordFr.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(ChangePasswordFr.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new ChangePasswordFr().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel ChangePassword;
+    private javax.swing.JLabel Confirm;
+    private javax.swing.JLabel NewPass;
+    private javax.swing.JLabel OldPass;
+    private javax.swing.JPanel background;
+    private javax.swing.JButton jButtonCancel;
+    private javax.swing.JButton jButtonOK;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPasswordField jPasswordFieldConfirm;
+    private javax.swing.JPasswordField jPasswordFieldNewPass;
+    private javax.swing.JPasswordField jPasswordFieldOldPass;
+    // End of variables declaration//GEN-END:variables
+}
