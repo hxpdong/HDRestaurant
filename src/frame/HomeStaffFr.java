@@ -783,7 +783,7 @@ public class HomeStaffFr extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Category:");
         DishMenu.add(jLabel8);
-        jLabel8.setBounds(0, 300, 70, 30);
+        jLabel8.setBounds(10, 300, 70, 30);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel10.setText("Name:");
@@ -856,12 +856,12 @@ public class HomeStaffFr extends javax.swing.JFrame {
             }
         });
         DishMenu.add(jComboBoxCategory);
-        jComboBoxCategory.setBounds(70, 300, 80, 30);
+        jComboBoxCategory.setBounds(80, 300, 80, 30);
 
         jLabelCate.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabelCate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DishMenu.add(jLabelCate);
-        jLabelCate.setBounds(150, 300, 110, 30);
+        jLabelCate.setBounds(160, 300, 100, 30);
 
         jButtonDishSearch.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButtonDishSearch.setText("Search");

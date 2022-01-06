@@ -1195,32 +1195,32 @@ public class HomeAdminFr extends javax.swing.JFrame {
         StaffID.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         StaffID.setText("ID:");
         StaffInfo.add(StaffID);
-        StaffID.setBounds(10, 51, 64, 24);
+        StaffID.setBounds(20, 50, 110, 30);
 
         jLabelStaffID.setBackground(new java.awt.Color(255, 255, 255));
         jLabelStaffID.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelStaffID.setText(" ");
         StaffInfo.add(jLabelStaffID);
-        jLabelStaffID.setBounds(81, 51, 59, 24);
+        jLabelStaffID.setBounds(140, 50, 100, 30);
 
         StaffName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         StaffName.setText("Name:");
         StaffInfo.add(StaffName);
-        StaffName.setBounds(10, 80, 64, 33);
+        StaffName.setBounds(20, 100, 110, 33);
 
         jTextFieldStaffName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         StaffInfo.add(jTextFieldStaffName);
-        jTextFieldStaffName.setBounds(80, 80, 190, 30);
+        jTextFieldStaffName.setBounds(140, 100, 190, 30);
 
         StaffPosition.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         StaffPosition.setText("Position:");
         StaffInfo.add(StaffPosition);
-        StaffPosition.setBounds(300, 80, 61, 30);
+        StaffPosition.setBounds(350, 50, 80, 30);
 
         jLabeStafflPost.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabeStafflPost.setText(" ");
         StaffInfo.add(jLabeStafflPost);
-        jLabeStafflPost.setBounds(369, 80, 70, 30);
+        jLabeStafflPost.setBounds(440, 50, 100, 30);
 
         jComboBoxStaffPost.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jComboBoxStaffPost.addActionListener(new java.awt.event.ActionListener() {
@@ -1229,45 +1229,45 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         StaffInfo.add(jComboBoxStaffPost);
-        jComboBoxStaffPost.setBounds(440, 80, 88, 31);
+        jComboBoxStaffPost.setBounds(540, 50, 100, 30);
 
         StaffBirthday.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         StaffBirthday.setText("Birthday:");
         StaffInfo.add(StaffBirthday);
-        StaffBirthday.setBounds(10, 120, 65, 30);
+        StaffBirthday.setBounds(20, 150, 110, 30);
 
         jDateChooserStaffDoB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         StaffInfo.add(jDateChooserStaffDoB);
-        jDateChooserStaffDoB.setBounds(80, 120, 190, 30);
+        jDateChooserStaffDoB.setBounds(140, 150, 190, 30);
 
         StaffState.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         StaffState.setText("State:");
         StaffInfo.add(StaffState);
-        StaffState.setBounds(300, 120, 61, 30);
+        StaffState.setBounds(350, 100, 80, 30);
 
         jLabelStaffState.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelStaffState.setText(" ");
         StaffInfo.add(jLabelStaffState);
-        jLabelStaffState.setBounds(369, 120, 70, 32);
+        jLabelStaffState.setBounds(440, 100, 130, 30);
 
         StaffPhone.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         StaffPhone.setText("Phone:");
         StaffInfo.add(StaffPhone);
-        StaffPhone.setBounds(10, 160, 64, 30);
+        StaffPhone.setBounds(20, 200, 110, 30);
 
         jTextFieldStaffPhone.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         StaffInfo.add(jTextFieldStaffPhone);
-        jTextFieldStaffPhone.setBounds(80, 160, 190, 30);
+        jTextFieldStaffPhone.setBounds(140, 200, 190, 30);
 
         StaffBonus.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         StaffBonus.setText("Bonus:");
         StaffInfo.add(StaffBonus);
-        StaffBonus.setBounds(300, 160, 61, 30);
+        StaffBonus.setBounds(350, 150, 80, 30);
 
         jLabelStaffBonus.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelStaffBonus.setText(" ");
         StaffInfo.add(jLabelStaffBonus);
-        jLabelStaffBonus.setBounds(370, 160, 70, 32);
+        jLabelStaffBonus.setBounds(440, 150, 90, 30);
 
         jSpinnerStaffBonus.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jSpinnerStaffBonus.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -1276,22 +1276,23 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         StaffInfo.add(jSpinnerStaffBonus);
-        jSpinnerStaffBonus.setBounds(460, 160, 70, 32);
+        jSpinnerStaffBonus.setBounds(570, 152, 70, 30);
 
         percent.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        percent.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         percent.setText("%");
         StaffInfo.add(percent);
-        percent.setBounds(440, 160, 17, 30);
+        percent.setBounds(527, 130, 40, 70);
 
         totalsal.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         totalsal.setText("Total Salary:");
         StaffInfo.add(totalsal);
-        totalsal.setBounds(300, 200, 86, 30);
+        totalsal.setBounds(350, 200, 110, 30);
 
         jLabelTotalSal.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelTotalSal.setText("  ");
         StaffInfo.add(jLabelTotalSal);
-        jLabelTotalSal.setBounds(398, 200, 130, 32);
+        jLabelTotalSal.setBounds(470, 200, 170, 32);
 
         jTableStaff.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jTableStaff.setModel(new javax.swing.table.DefaultTableModel(
@@ -1310,7 +1311,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTableStaff);
 
         StaffInfo.add(jScrollPane1);
-        jScrollPane1.setBounds(10, 290, 450, 148);
+        jScrollPane1.setBounds(20, 340, 530, 148);
 
         jButtonWork.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonWork.setForeground(new java.awt.Color(51, 255, 0));
@@ -1322,7 +1323,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         StaffInfo.add(jButtonWork);
-        jButtonWork.setBounds(470, 310, 60, 40);
+        jButtonWork.setBounds(560, 360, 80, 50);
 
         jButtonRetired.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonRetired.setForeground(new java.awt.Color(255, 51, 0));
@@ -1334,7 +1335,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         StaffInfo.add(jButtonRetired);
-        jButtonRetired.setBounds(470, 380, 60, 40);
+        jButtonRetired.setBounds(560, 430, 80, 50);
 
         jButtonDeleteStaff.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonDeleteStaff.setText("Delete");
@@ -1344,7 +1345,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         StaffInfo.add(jButtonDeleteStaff);
-        jButtonDeleteStaff.setBounds(190, 250, 80, 30);
+        jButtonDeleteStaff.setBounds(220, 290, 90, 40);
 
         jButtonNewStaff.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonNewStaff.setText("New");
@@ -1354,7 +1355,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         StaffInfo.add(jButtonNewStaff);
-        jButtonNewStaff.setBounds(10, 250, 80, 30);
+        jButtonNewStaff.setBounds(20, 290, 90, 40);
 
         jButtonUpdateStaff.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonUpdateStaff.setText("Update");
@@ -1364,7 +1365,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         StaffInfo.add(jButtonUpdateStaff);
-        jButtonUpdateStaff.setBounds(100, 250, 80, 30);
+        jButtonUpdateStaff.setBounds(120, 290, 90, 40);
 
         jButtonRefreshStaff.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButtonRefreshStaff.setText("Refresh");
@@ -1374,7 +1375,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         StaffInfo.add(jButtonRefreshStaff);
-        jButtonRefreshStaff.setBounds(10, 210, 80, 30);
+        jButtonRefreshStaff.setBounds(20, 240, 90, 40);
 
         jButtonSearchStaff.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonSearchStaff.setText("Search");
@@ -1384,16 +1385,16 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         StaffInfo.add(jButtonSearchStaff);
-        jButtonSearchStaff.setBounds(430, 250, 100, 30);
+        jButtonSearchStaff.setBounds(540, 290, 100, 40);
 
         jTextFieldSearch.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         StaffInfo.add(jTextFieldSearch);
-        jTextFieldSearch.setBounds(280, 250, 150, 30);
+        jTextFieldSearch.setBounds(390, 290, 150, 40);
 
         Entertosearch.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         Entertosearch.setText("Enter to search:");
         StaffInfo.add(Entertosearch);
-        Entertosearch.setBounds(290, 230, 120, 20);
+        Entertosearch.setBounds(390, 260, 150, 30);
 
         Cateinfo.setLayout(null);
 
@@ -1402,7 +1403,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
         TitlePost.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TitlePost.setText("Position");
         Cateinfo.add(TitlePost);
-        TitlePost.setBounds(10, 10, 380, 29);
+        TitlePost.setBounds(0, 0, 470, 29);
 
         jComboBoxPost.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jComboBoxPost.addActionListener(new java.awt.event.ActionListener() {
@@ -1411,32 +1412,32 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         Cateinfo.add(jComboBoxPost);
-        jComboBoxPost.setBounds(10, 60, 90, 30);
+        jComboBoxPost.setBounds(30, 50, 90, 40);
 
         jLabelPost.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelPost.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Cateinfo.add(jLabelPost);
-        jLabelPost.setBounds(110, 60, 80, 30);
+        jLabelPost.setBounds(130, 50, 100, 40);
 
         NewPost.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         NewPost.setText("New position:");
         Cateinfo.add(NewPost);
-        NewPost.setBounds(200, 60, 100, 30);
+        NewPost.setBounds(240, 50, 100, 40);
 
         jTextFieldNewPost.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jTextFieldNewPost.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         Cateinfo.add(jTextFieldNewPost);
-        jTextFieldNewPost.setBounds(300, 60, 80, 30);
+        jTextFieldNewPost.setBounds(350, 50, 80, 40);
 
         jTextFieldBasicSal.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jTextFieldBasicSal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         Cateinfo.add(jTextFieldBasicSal);
-        jTextFieldBasicSal.setBounds(80, 110, 210, 30);
+        jTextFieldBasicSal.setBounds(120, 120, 160, 40);
 
         BasicSal.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         BasicSal.setText("Basic:");
         Cateinfo.add(BasicSal);
-        BasicSal.setBounds(20, 110, 50, 30);
+        BasicSal.setBounds(30, 120, 80, 40);
 
         jButtonUpdatePost.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButtonUpdatePost.setText("Update");
@@ -1446,7 +1447,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         Cateinfo.add(jButtonUpdatePost);
-        jButtonUpdatePost.setBounds(300, 110, 80, 30);
+        jButtonUpdatePost.setBounds(310, 120, 130, 40);
 
         jButtonNewPost.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButtonNewPost.setText("New");
@@ -1456,7 +1457,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         Cateinfo.add(jButtonNewPost);
-        jButtonNewPost.setBounds(160, 150, 80, 30);
+        jButtonNewPost.setBounds(200, 180, 80, 40);
 
         AccountInfo.setLayout(null);
 
@@ -1465,34 +1466,34 @@ public class HomeAdminFr extends javax.swing.JFrame {
         TitleAccount.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TitleAccount.setText("Account");
         AccountInfo.add(TitleAccount);
-        TitleAccount.setBounds(10, 10, 380, 29);
+        TitleAccount.setBounds(10, 10, 430, 29);
 
         AccountID.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         AccountID.setText("Staff ID:");
         AccountInfo.add(AccountID);
-        AccountID.setBounds(20, 70, 80, 30);
+        AccountID.setBounds(40, 70, 110, 30);
 
         Username.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Username.setText("Username:");
         AccountInfo.add(Username);
-        Username.setBounds(20, 110, 80, 30);
+        Username.setBounds(40, 110, 110, 30);
 
         Password.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Password.setText("Password:");
         AccountInfo.add(Password);
-        Password.setBounds(20, 150, 80, 30);
+        Password.setBounds(40, 150, 110, 30);
 
         jTextFieldID.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         AccountInfo.add(jTextFieldID);
-        jTextFieldID.setBounds(110, 70, 150, 30);
+        jTextFieldID.setBounds(150, 70, 170, 30);
 
         jTextFieldUsername.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         AccountInfo.add(jTextFieldUsername);
-        jTextFieldUsername.setBounds(110, 110, 150, 30);
+        jTextFieldUsername.setBounds(150, 110, 170, 30);
 
         jTextFieldPassword.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         AccountInfo.add(jTextFieldPassword);
-        jTextFieldPassword.setBounds(110, 150, 150, 30);
+        jTextFieldPassword.setBounds(150, 150, 170, 30);
 
         jButtonCreateAcc.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonCreateAcc.setText("Create");
@@ -1502,7 +1503,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         AccountInfo.add(jButtonCreateAcc);
-        jButtonCreateAcc.setBounds(290, 110, 80, 30);
+        jButtonCreateAcc.setBounds(330, 110, 80, 40);
 
         jButtonAccList.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButtonAccList.setText("List");
@@ -1512,7 +1513,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         AccountInfo.add(jButtonAccList);
-        jButtonAccList.setBounds(290, 190, 80, 30);
+        jButtonAccList.setBounds(330, 180, 80, 40);
 
         javax.swing.GroupLayout TabStaffLayout = new javax.swing.GroupLayout(TabStaff);
         TabStaff.setLayout(TabStaffLayout);
@@ -1520,11 +1521,11 @@ public class HomeAdminFr extends javax.swing.JFrame {
             TabStaffLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TabStaffLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(StaffInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 539, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(StaffInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 666, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(TabStaffLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Cateinfo, javax.swing.GroupLayout.DEFAULT_SIZE, 398, Short.MAX_VALUE)
-                    .addComponent(AccountInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(AccountInfo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 441, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Cateinfo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 471, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         TabStaffLayout.setVerticalGroup(
@@ -1534,9 +1535,9 @@ public class HomeAdminFr extends javax.swing.JFrame {
                 .addGroup(TabStaffLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(StaffInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(TabStaffLayout.createSequentialGroup()
-                        .addComponent(Cateinfo, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Cateinfo, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(AccountInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)))
+                        .addComponent(AccountInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
@@ -1549,11 +1550,11 @@ public class HomeAdminFr extends javax.swing.JFrame {
         NewCate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         NewCate.setText("New Category:");
         CategoryInfo.add(NewCate);
-        NewCate.setBounds(10, 30, 110, 30);
+        NewCate.setBounds(30, 30, 140, 30);
 
         jTextFieldNewCate.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         CategoryInfo.add(jTextFieldNewCate);
-        jTextFieldNewCate.setBounds(120, 30, 190, 30);
+        jTextFieldNewCate.setBounds(180, 30, 190, 30);
 
         jButtonNewCate.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonNewCate.setText("New");
@@ -1563,14 +1564,14 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         CategoryInfo.add(jButtonNewCate);
-        jButtonNewCate.setBounds(320, 30, 70, 30);
+        jButtonNewCate.setBounds(380, 30, 80, 30);
 
         MenuByCate.setLayout(null);
 
         Category.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Category.setText("Category:");
         MenuByCate.add(Category);
-        Category.setBounds(10, 10, 80, 30);
+        Category.setBounds(30, 10, 100, 30);
 
         jComboBoxCategory.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBoxCategory.addActionListener(new java.awt.event.ActionListener() {
@@ -1579,7 +1580,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         MenuByCate.add(jComboBoxCategory);
-        jComboBoxCategory.setBounds(90, 10, 150, 30);
+        jComboBoxCategory.setBounds(320, 10, 150, 30);
 
         jTableDish.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1597,12 +1598,12 @@ public class HomeAdminFr extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTableDish);
 
         MenuByCate.add(jScrollPane2);
-        jScrollPane2.setBounds(10, 90, 410, 190);
+        jScrollPane2.setBounds(10, 100, 480, 210);
 
         jLabelCate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelCate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MenuByCate.add(jLabelCate);
-        jLabelCate.setBounds(10, 50, 180, 30);
+        jLabelCate.setBounds(140, 10, 180, 30);
 
         jButtonDishSearch.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButtonDishSearch.setText("Search");
@@ -1612,7 +1613,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         MenuByCate.add(jButtonDishSearch);
-        jButtonDishSearch.setBounds(210, 50, 80, 30);
+        jButtonDishSearch.setBounds(390, 50, 80, 40);
 
         jButtonDishDelete.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonDishDelete.setText("List Delete");
@@ -1622,7 +1623,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         MenuByCate.add(jButtonDishDelete);
-        jButtonDishDelete.setBounds(10, 300, 110, 30);
+        jButtonDishDelete.setBounds(30, 330, 110, 40);
 
         jButtonEditHomeCustomer.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonEditHomeCustomer.setText("Edit");
@@ -1632,7 +1633,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         MenuByCate.add(jButtonEditHomeCustomer);
-        jButtonEditHomeCustomer.setBounds(310, 300, 110, 30);
+        jButtonEditHomeCustomer.setBounds(350, 330, 110, 40);
 
         DishInfo.setLayout(null);
 
@@ -1645,31 +1646,31 @@ public class HomeAdminFr extends javax.swing.JFrame {
         DishID.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         DishID.setText("ID:");
         DishInfo.add(DishID);
-        DishID.setBounds(20, 60, 30, 30);
+        DishID.setBounds(40, 60, 50, 30);
 
         DishName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         DishName.setText("Name:");
         DishInfo.add(DishName);
-        DishName.setBounds(20, 110, 70, 30);
+        DishName.setBounds(40, 110, 70, 30);
 
         DishCategory.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         DishCategory.setText("Caterogy:");
         DishInfo.add(DishCategory);
-        DishCategory.setBounds(130, 60, 70, 30);
+        DishCategory.setBounds(180, 60, 100, 30);
 
         DishPrice.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         DishPrice.setText("Price:");
         DishInfo.add(DishPrice);
-        DishPrice.setBounds(260, 110, 50, 30);
+        DishPrice.setBounds(300, 110, 70, 30);
 
         jLabelDishID.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelDishID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DishInfo.add(jLabelDishID);
-        jLabelDishID.setBounds(50, 60, 60, 30);
+        jLabelDishID.setBounds(100, 60, 80, 30);
 
         jTextFieldDishName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         DishInfo.add(jTextFieldDishName);
-        jTextFieldDishName.setBounds(90, 110, 160, 30);
+        jTextFieldDishName.setBounds(120, 110, 160, 30);
 
         jComboBoxCategory2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBoxCategory2.addActionListener(new java.awt.event.ActionListener() {
@@ -1678,26 +1679,26 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         DishInfo.add(jComboBoxCategory2);
-        jComboBoxCategory2.setBounds(370, 60, 120, 30);
+        jComboBoxCategory2.setBounds(460, 60, 130, 30);
 
         jLabelDishCate.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabelDishCate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DishInfo.add(jLabelDishCate);
-        jLabelDishCate.setBounds(210, 60, 160, 30);
+        jLabelDishCate.setBounds(290, 60, 160, 30);
 
         jTextFieldDishPrice.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextFieldDishPrice.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         DishInfo.add(jTextFieldDishPrice);
-        jTextFieldDishPrice.setBounds(310, 110, 120, 30);
+        jTextFieldDishPrice.setBounds(380, 110, 120, 30);
 
         jTextFieldDishUnit.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         DishInfo.add(jTextFieldDishUnit);
-        jTextFieldDishUnit.setBounds(440, 110, 50, 30);
+        jTextFieldDishUnit.setBounds(530, 110, 60, 30);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("/");
         DishInfo.add(jLabel1);
-        jLabel1.setBounds(430, 100, 10, 50);
+        jLabel1.setBounds(510, 100, 20, 50);
 
         jButtonNewDish.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonNewDish.setText("New");
@@ -1707,7 +1708,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         DishInfo.add(jButtonNewDish);
-        jButtonNewDish.setBounds(410, 150, 80, 30);
+        jButtonNewDish.setBounds(510, 160, 80, 40);
 
         jButtonUpdateDish.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonUpdateDish.setText("Update");
@@ -1717,7 +1718,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         DishInfo.add(jButtonUpdateDish);
-        jButtonUpdateDish.setBounds(410, 190, 80, 30);
+        jButtonUpdateDish.setBounds(510, 210, 80, 40);
 
         jButtonDeleteDish.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonDeleteDish.setText("Delete");
@@ -1727,7 +1728,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         DishInfo.add(jButtonDeleteDish);
-        jButtonDeleteDish.setBounds(410, 230, 80, 30);
+        jButtonDeleteDish.setBounds(510, 260, 80, 40);
 
         jButtonRefeshDish.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButtonRefeshDish.setText("Refresh");
@@ -1737,35 +1738,35 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         DishInfo.add(jButtonRefeshDish);
-        jButtonRefeshDish.setBounds(320, 150, 80, 30);
+        jButtonRefeshDish.setBounds(410, 160, 80, 40);
 
         jCheckBoxDMonday.setText("Monday");
         DishInfo.add(jCheckBoxDMonday);
-        jCheckBoxDMonday.setBounds(20, 150, 100, 23);
+        jCheckBoxDMonday.setBounds(60, 150, 100, 23);
 
         jCheckBoxDWednesday.setText("Wednesday");
         DishInfo.add(jCheckBoxDWednesday);
-        jCheckBoxDWednesday.setBounds(20, 180, 100, 23);
+        jCheckBoxDWednesday.setBounds(60, 180, 100, 23);
 
         jCheckBoxDThursday.setText("Thursday");
         DishInfo.add(jCheckBoxDThursday);
-        jCheckBoxDThursday.setBounds(150, 180, 100, 23);
+        jCheckBoxDThursday.setBounds(190, 180, 100, 23);
 
         jCheckBoxDFriday.setText("Friday");
         DishInfo.add(jCheckBoxDFriday);
-        jCheckBoxDFriday.setBounds(20, 210, 100, 23);
+        jCheckBoxDFriday.setBounds(60, 210, 100, 23);
 
         jCheckBoxDSaturday.setText("Saturday");
         DishInfo.add(jCheckBoxDSaturday);
-        jCheckBoxDSaturday.setBounds(150, 210, 100, 23);
+        jCheckBoxDSaturday.setBounds(190, 210, 100, 23);
 
         jCheckBoxDSunday.setText("Sunday");
         DishInfo.add(jCheckBoxDSunday);
-        jCheckBoxDSunday.setBounds(20, 240, 100, 23);
+        jCheckBoxDSunday.setBounds(60, 240, 100, 23);
 
         jCheckBoxDTuesday.setText("Tuesday");
         DishInfo.add(jCheckBoxDTuesday);
-        jCheckBoxDTuesday.setBounds(150, 150, 100, 23);
+        jCheckBoxDTuesday.setBounds(190, 150, 100, 23);
 
         TableInfo.setLayout(null);
 
@@ -1773,21 +1774,21 @@ public class HomeAdminFr extends javax.swing.JFrame {
         Tableinformation.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Tableinformation.setText("Table");
         TableInfo.add(Tableinformation);
-        Tableinformation.setBounds(0, 0, 500, 40);
+        Tableinformation.setBounds(0, 0, 640, 40);
 
         TableName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         TableName.setText("Table Name:");
         TableInfo.add(TableName);
-        TableName.setBounds(80, 40, 90, 30);
+        TableName.setBounds(110, 40, 110, 30);
 
         NumOfSeat.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         NumOfSeat.setText("Seats:");
         TableInfo.add(NumOfSeat);
-        NumOfSeat.setBounds(80, 80, 90, 30);
+        NumOfSeat.setBounds(110, 80, 110, 30);
 
         jTextFieldTableName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         TableInfo.add(jTextFieldTableName);
-        jTextFieldTableName.setBounds(180, 40, 180, 30);
+        jTextFieldTableName.setBounds(250, 40, 160, 30);
 
         jSpinnerTableNumOfSeat.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -1795,12 +1796,12 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         TableInfo.add(jSpinnerTableNumOfSeat);
-        jSpinnerTableNumOfSeat.setBounds(300, 80, 60, 30);
+        jSpinnerTableNumOfSeat.setBounds(350, 80, 60, 30);
 
         jLabelTableNumOfSeat.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelTableNumOfSeat.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TableInfo.add(jLabelTableNumOfSeat);
-        jLabelTableNumOfSeat.setBounds(180, 80, 80, 30);
+        jLabelTableNumOfSeat.setBounds(250, 80, 80, 30);
 
         jButtonTableNew.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonTableNew.setText("New");
@@ -1810,7 +1811,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         TableInfo.add(jButtonTableNew);
-        jButtonTableNew.setBounds(370, 80, 80, 30);
+        jButtonTableNew.setBounds(440, 50, 80, 40);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton1.setText("List Table");
@@ -1820,7 +1821,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         TableInfo.add(jButton1);
-        jButton1.setBounds(350, 120, 100, 30);
+        jButton1.setBounds(420, 120, 100, 30);
 
         javax.swing.GroupLayout TabMenuLayout = new javax.swing.GroupLayout(TabMenu);
         TabMenu.setLayout(TabMenuLayout);
@@ -1828,12 +1829,12 @@ public class HomeAdminFr extends javax.swing.JFrame {
             TabMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TabMenuLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(TabMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(CategoryInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 432, Short.MAX_VALUE)
-                    .addComponent(MenuByCate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
                 .addGroup(TabMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(DishInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 505, Short.MAX_VALUE)
+                    .addComponent(MenuByCate, javax.swing.GroupLayout.DEFAULT_SIZE, 499, Short.MAX_VALUE)
+                    .addComponent(CategoryInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(TabMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(DishInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 638, Short.MAX_VALUE)
                     .addComponent(TableInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -1843,7 +1844,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(TabMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(TabMenuLayout.createSequentialGroup()
-                        .addComponent(DishInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE)
+                        .addComponent(DishInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 324, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
                         .addComponent(TableInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(TabMenuLayout.createSequentialGroup()
@@ -1875,78 +1876,78 @@ public class HomeAdminFr extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jTableInvoiceList);
 
         InvoiceList.add(jScrollPane3);
-        jScrollPane3.setBounds(10, 140, 320, 300);
+        jScrollPane3.setBounds(10, 140, 430, 300);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("Invoices");
         InvoiceList.add(jLabel13);
-        jLabel13.setBounds(0, 0, 340, 40);
+        jLabel13.setBounds(0, 0, 450, 40);
 
         InvoiceDetail.setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("State:");
         InvoiceDetail.add(jLabel2);
-        jLabel2.setBounds(320, 170, 50, 30);
+        jLabel2.setBounds(360, 170, 80, 30);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("Invoice ID:");
         InvoiceDetail.add(jLabel3);
-        jLabel3.setBounds(20, 50, 80, 30);
+        jLabel3.setBounds(120, 50, 100, 30);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("Table:");
         InvoiceDetail.add(jLabel4);
-        jLabel4.setBounds(320, 50, 50, 30);
+        jLabel4.setBounds(360, 50, 80, 30);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setText("Staff:");
         InvoiceDetail.add(jLabel5);
-        jLabel5.setBounds(20, 80, 90, 30);
+        jLabel5.setBounds(120, 80, 100, 30);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel6.setText("Date:");
         InvoiceDetail.add(jLabel6);
-        jLabel6.setBounds(20, 110, 90, 30);
+        jLabel6.setBounds(120, 110, 100, 30);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("Date Update:");
         InvoiceDetail.add(jLabel7);
-        jLabel7.setBounds(20, 140, 90, 30);
+        jLabel7.setBounds(120, 140, 100, 30);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Total:");
         InvoiceDetail.add(jLabel8);
-        jLabel8.setBounds(20, 170, 50, 30);
+        jLabel8.setBounds(120, 170, 100, 30);
 
         jLabelInvoiceID.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         InvoiceDetail.add(jLabelInvoiceID);
-        jLabelInvoiceID.setBounds(120, 50, 70, 30);
+        jLabelInvoiceID.setBounds(230, 50, 70, 30);
 
         jLabelInvoiceTable.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         InvoiceDetail.add(jLabelInvoiceTable);
-        jLabelInvoiceTable.setBounds(390, 50, 110, 30);
+        jLabelInvoiceTable.setBounds(450, 50, 110, 30);
 
         jLabelInvoiceStaff.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         InvoiceDetail.add(jLabelInvoiceStaff);
-        jLabelInvoiceStaff.setBounds(120, 80, 200, 30);
+        jLabelInvoiceStaff.setBounds(230, 80, 200, 30);
 
         jLabelInvoiceDate.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         InvoiceDetail.add(jLabelInvoiceDate);
-        jLabelInvoiceDate.setBounds(120, 110, 200, 30);
+        jLabelInvoiceDate.setBounds(230, 110, 200, 30);
 
         jLabelInvoiceDateUpt.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         InvoiceDetail.add(jLabelInvoiceDateUpt);
-        jLabelInvoiceDateUpt.setBounds(120, 140, 200, 30);
+        jLabelInvoiceDateUpt.setBounds(230, 140, 200, 30);
 
         jLabelInvoiceTotal.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         InvoiceDetail.add(jLabelInvoiceTotal);
-        jLabelInvoiceTotal.setBounds(80, 170, 100, 30);
+        jLabelInvoiceTotal.setBounds(230, 170, 120, 30);
 
         jLabelInvoiceState.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         InvoiceDetail.add(jLabelInvoiceState);
-        jLabelInvoiceState.setBounds(390, 170, 110, 30);
+        jLabelInvoiceState.setBounds(450, 170, 110, 30);
 
         jTableDetail.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1959,13 +1960,13 @@ public class HomeAdminFr extends javax.swing.JFrame {
         jScrollPane4.setViewportView(jTableDetail);
 
         InvoiceDetail.add(jScrollPane4);
-        jScrollPane4.setBounds(10, 220, 580, 220);
+        jScrollPane4.setBounds(10, 220, 670, 220);
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("Detail");
         InvoiceDetail.add(jLabel14);
-        jLabel14.setBounds(0, 0, 600, 40);
+        jLabel14.setBounds(0, 0, 690, 40);
 
         javax.swing.GroupLayout TabInvoiceLayout = new javax.swing.GroupLayout(TabInvoice);
         TabInvoice.setLayout(TabInvoiceLayout);
@@ -1973,9 +1974,9 @@ public class HomeAdminFr extends javax.swing.JFrame {
             TabInvoiceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TabInvoiceLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(InvoiceList, javax.swing.GroupLayout.DEFAULT_SIZE, 344, Short.MAX_VALUE)
+                .addComponent(InvoiceList, javax.swing.GroupLayout.DEFAULT_SIZE, 454, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(InvoiceDetail, javax.swing.GroupLayout.PREFERRED_SIZE, 601, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(InvoiceDetail, javax.swing.GroupLayout.PREFERRED_SIZE, 691, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         TabInvoiceLayout.setVerticalGroup(
@@ -1983,7 +1984,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             .addGroup(TabInvoiceLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(TabInvoiceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(InvoiceList, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+                    .addComponent(InvoiceList, javax.swing.GroupLayout.DEFAULT_SIZE, 499, Short.MAX_VALUE)
                     .addComponent(InvoiceDetail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -1997,16 +1998,16 @@ public class HomeAdminFr extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel9.setText("Year:");
         StatisticIncome.add(jLabel9);
-        jLabel9.setBounds(150, 60, 60, 30);
+        jLabel9.setBounds(220, 60, 70, 40);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel10.setText("Total Income:");
         StatisticIncome.add(jLabel10);
-        jLabel10.setBounds(10, 170, 110, 30);
+        jLabel10.setBounds(40, 160, 110, 40);
         StatisticIncome.add(jTextFieldYear);
-        jTextFieldYear.setBounds(210, 60, 80, 30);
+        jTextFieldYear.setBounds(290, 60, 80, 40);
         StatisticIncome.add(jTextFieldMonth);
-        jTextFieldMonth.setBounds(80, 60, 60, 30);
+        jTextFieldMonth.setBounds(130, 60, 60, 40);
 
         jButtonStatisticSearch.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButtonStatisticSearch.setText("Search");
@@ -2016,7 +2017,7 @@ public class HomeAdminFr extends javax.swing.JFrame {
             }
         });
         StatisticIncome.add(jButtonStatisticSearch);
-        jButtonStatisticSearch.setBounds(360, 60, 90, 30);
+        jButtonStatisticSearch.setBounds(390, 60, 90, 40);
 
         jTableStatisticByMonth.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -2029,25 +2030,25 @@ public class HomeAdminFr extends javax.swing.JFrame {
         jScrollPane5.setViewportView(jTableStatisticByMonth);
 
         StatisticIncome.add(jScrollPane5);
-        jScrollPane5.setBounds(10, 210, 452, 230);
+        jScrollPane5.setBounds(10, 210, 490, 230);
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel11.setText("Month:");
         StatisticIncome.add(jLabel11);
-        jLabel11.setBounds(10, 60, 60, 30);
+        jLabel11.setBounds(40, 60, 70, 40);
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel12.setText("Total Invoice:");
         StatisticIncome.add(jLabel12);
-        jLabel12.setBounds(10, 120, 110, 30);
+        jLabel12.setBounds(40, 110, 120, 40);
 
         jLabelTtIncome.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         StatisticIncome.add(jLabelTtIncome);
-        jLabelTtIncome.setBounds(140, 170, 150, 30);
+        jLabelTtIncome.setBounds(220, 160, 150, 40);
 
         jLabelTtInvoice.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         StatisticIncome.add(jLabelTtInvoice);
-        jLabelTtInvoice.setBounds(140, 120, 150, 30);
+        jLabelTtInvoice.setBounds(220, 110, 150, 40);
 
         javax.swing.GroupLayout TabStatisticLayout = new javax.swing.GroupLayout(TabStatistic);
         TabStatistic.setLayout(TabStatisticLayout);
@@ -2055,8 +2056,8 @@ public class HomeAdminFr extends javax.swing.JFrame {
             TabStatisticLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TabStatisticLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(StatisticIncome, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(493, Short.MAX_VALUE))
+                .addComponent(StatisticIncome, javax.swing.GroupLayout.PREFERRED_SIZE, 511, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(654, Short.MAX_VALUE))
         );
         TabStatisticLayout.setVerticalGroup(
             TabStatisticLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2074,11 +2075,11 @@ public class HomeAdminFr extends javax.swing.JFrame {
         TabInventory.setLayout(TabInventoryLayout);
         TabInventoryLayout.setHorizontalGroup(
             TabInventoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 975, Short.MAX_VALUE)
+            .addGap(0, 1175, Short.MAX_VALUE)
         );
         TabInventoryLayout.setVerticalGroup(
             TabInventoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 472, Short.MAX_VALUE)
+            .addGap(0, 521, Short.MAX_VALUE)
         );
 
         TabbedPaneAdmin.addTab("Inventory", TabInventory);
@@ -2100,19 +2101,19 @@ public class HomeAdminFr extends javax.swing.JFrame {
                 .addGap(11, 11, 11)
                 .addComponent(PanelWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(TabbedPaneAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addComponent(TabbedPaneAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, 1200, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, 650, Short.MAX_VALUE)
         );
 
         pack();
