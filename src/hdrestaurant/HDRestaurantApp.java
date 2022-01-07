@@ -12,7 +12,7 @@ import java.sql.Connection;
  *
  * @author ASUS OS
  */
-public class HDRestaurant {
+public class HDRestaurantApp {
 
     /**
      * @param args the command line arguments
