@@ -216,9 +216,9 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="StaffInfo" pref="666" max="32767" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="AccountInfo" alignment="1" min="-2" pref="441" max="-2" attributes="0"/>
-                              <Component id="Cateinfo" alignment="1" min="-2" pref="471" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="Cateinfo" pref="471" max="32767" attributes="0"/>
+                              <Component id="AccountInfo" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -1028,10 +1028,10 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="MenuByCate" pref="499" max="32767" attributes="0"/>
-                              <Component id="CategoryInfo" max="32767" attributes="0"/>
+                              <Component id="CategoryInfo" pref="507" max="32767" attributes="0"/>
+                              <Component id="MenuByCate" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="DishInfo" pref="638" max="32767" attributes="0"/>
                               <Component id="TableInfo" max="32767" attributes="0"/>
