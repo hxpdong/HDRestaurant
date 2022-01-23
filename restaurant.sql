@@ -271,7 +271,7 @@ create table accounts(
     primary key (account_id),
     foreign key(type_id) references account_type(type_id)
 );
-insert into accounts values (1,"admin","0774839113", 1);
+insert into accounts values (1,"admin","admin", 1);
 insert into accounts values (1000,"dong1000","dong1000", 2);
 insert into accounts values (1001,"an1001","an1001", 2);
 
@@ -1150,8 +1150,7 @@ begin
 	end if;
 end; $$
 delimiter ;
-select * from dish_menu;
-select * from menu;
+
 insert into menu values(1,23);
 insert into menu values(2,23);
 insert into menu values(3,23);
