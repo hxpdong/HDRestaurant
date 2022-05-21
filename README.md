@@ -1,2 +1,3 @@
 # HDRestaurant
-Small project using Java and MySQL
+Small project
+Using Java and MySQL
