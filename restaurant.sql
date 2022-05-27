@@ -4,6 +4,7 @@ create database restaurant;
 use restaurant;
 SET GLOBAL log_bin_trust_function_creators = 1;
 set sql_safe_updates = 0;
+SET collation_connection = 'utf8mb4_general_ci';
 /*
 bigint unsigned: totalSal, invoice_id, invoice_total
 */
