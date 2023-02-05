@@ -139,7 +139,6 @@ public class LoginFr extends javax.swing.JFrame {
         welcome.setBounds(0, 30, 380, 45);
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Sunflower-icon.png"))); // NOI18N
         jPanel1.add(logo);
         logo.setBounds(0, 20, 380, 50);
 
